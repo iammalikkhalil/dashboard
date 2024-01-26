@@ -6,7 +6,7 @@ export default function Graph({ props }) {
   const [chartData, setChartData] = useState({
     options: {
       chart: {
-        id: "basic-bar",
+        id: "graph",
       },
       stroke: {
         curve: "smooth",

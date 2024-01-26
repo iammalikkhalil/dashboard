@@ -9,14 +9,10 @@ import "./Dashboard.css";
 import ChartCard from "./ChartCard";
 export default function Dashboard({props}) {
 
-  console.log(props);
-
   let remaining = props.PersonEntered - props.PersonExit;
   if (remaining<0) {
     remaining = 0;
   }
-
-  console.log(remaining);
 
   return (
     <div className="body">
@@ -43,7 +39,7 @@ export default function Dashboard({props}) {
           {/* card 4 */}
           <div className="card">
             {/* <EventCard data={{ heading: "card 4", value: "200" }} /> */}
-            <ChartCard props={{totalIn: props.PersonEntered, totalOut: props.PersonExit}}/>
+            <ChartCard props={{totalIn: props.PersonEntered, totalOut: props.PersonExit, EventName: props.EventName}}/>
           </div>
         </div>
 
