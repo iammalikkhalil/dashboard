@@ -1,0 +1,1 @@
+export const database = `https://smartpersondetectorandcounter-default-rtdb.firebaseio.com/EventsRecord.json`;
